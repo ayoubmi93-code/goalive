@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 
-function convertTime(utcTime, offsetHours) {
+function convertTime(utcTime: string, offsetHours: number): string {
   const [h, m] = utcTime.split(":").map(Number);
   const newH = (h + offsetHours + 24) % 24;
   return `${String(newH).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
