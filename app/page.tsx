@@ -164,8 +164,8 @@ const FPOS = {
   "4-4-2": [{x:50,y:91},{x:15,y:72},{x:38,y:75},{x:62,y:75},{x:85,y:72},{x:15,y:50},{x:38,y:50},{x:62,y:50},{x:85,y:50},{x:33,y:20},{x:67,y:20}],
 };
 
-const RC = r => r >= 8.5 ? "#4ade80" : r >= 7.5 ? "#facc15" : "#f87171";
-const FC = f => f >= 90 ? "#4ade80" : f >= 75 ? "#facc15" : "#f87171";
+const RC = (r: number) => r >= 8.5 ? "#4ade80" : r >= 7.5 ? "#facc15" : "#f87171";
+const FC = (f: number) => f >= 90 ? "#4ade80" : f >= 75 ? "#facc15" : "#f87171";
 
 const css = `
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap');
